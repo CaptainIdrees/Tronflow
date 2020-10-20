@@ -8,6 +8,22 @@ body {
     background-color: #030025;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.sec-title {
+    font-size     : 44px;
+    letter-spacing: 2px;
+    font-weight   : 700;
+}
+
 hr {
     border-top: 1px solid rgb(24 101 243);
 }
@@ -16,29 +32,28 @@ hr {
     color: #fff;
 }
 
-.text-blue{
+.text-blue {
     color: #6b90d4;
 }
 
-.text-theme-blue{
+.text-theme-blue {
     color: var(--theme-blue);
 }
 
-.text-red{
+.text-red {
     color: var(--theme-red);
 }
 
-.divider{
+.divider {
     border-bottom: 2px solid var(--theme-blue);
-    width: 100px;
-    margin: auto;
+    width        : 100px;
+    margin       : auto;
     margin-bottom: 20px;
 }
 
 .btn {
-    border-radius: 50px;
-    font-size    : 18px;
-    padding      : 10px 25px;
+    font-size: 18px;
+    padding  : 8px 20px;
 }
 
 .btn-danger {
@@ -60,17 +75,17 @@ hr {
 }
 
 /* Header Section */
-header .top-header{
+header .top-header {
     background-color: var(--theme-blue);
-    color: #fff;
-    padding: 5px 0;
+    color           : #fff;
+    padding         : 5px 0;
 }
 
-header .fixed-top{
+header .fixed-top {
     box-shadow: 0px 2px 15px rgb(0 0 0 / 45%);
 }
 
-header .navbar{
+header .navbar {
     background-color: #030025;
 }
 
@@ -84,30 +99,37 @@ header .navbar{
     overflow     : hidden;
 }
 
-.carousel-item img{
+.carousel-item img {
     max-height: 300px;
 }
 
 /* Why Tron Section */
-.svg-img{
+.svg-img {
     max-width: 35%;
 }
 
 /* Invest/Capital Section */
-.input-group-text{
-    background-color: #fff;
+.input-group-text {
+    background-color: var(--theme-blue);
+    color           : #fff;
 }
 
-.input-group-text img{
+.input-group-text img {
     width: 20px;
 }
 
-.invest-container, .capital-container{
-    width: 310px;
-    display: block;
-    margin: auto;
+label h5 {
+    font-weight: 400;
+}
+
+.invest-container,
+.capital-container {
+    max-width : 360px;
+    display   : block;
+    margin    : auto;
     text-align: center;
 }
+
 /* FAQ Section */
 #accordion {
     display: block;
@@ -163,11 +185,21 @@ header .navbar{
 }
 
 /* Footer Section */
-.copyright-text{
-    margin: 0;
+.copyright-text {
+    margin     : 0;
     line-height: 70px;
 }
 
-footer .nav{
+footer .nav {
     line-height: 55px;
+}
+
+/* Media Quuries */
+@media(max-width:576px){
+    .sec-title{
+        font-size: 30px;
+    }
+    .svg-img {
+        max-width: 18%;
+    }
 }
