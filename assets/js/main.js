@@ -9,3 +9,12 @@ $(window).on("scroll", function(){
 
     }
 })
+
+// Accordion toggle icon
+$('.card-header').click(function () {
+    $(this).toggleClass('active');
+});
+
+
+// Initialize popover
+$('[data-toggle="popover"]').popover();
