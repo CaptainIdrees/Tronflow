@@ -75,12 +75,6 @@ hr {
 }
 
 /* Header Section */
-header .top-header {
-    background-color: var(--theme-blue);
-    color           : #fff;
-    padding         : 5px 0;
-}
-
 header .fixed-top {
     box-shadow: 0px 2px 15px rgb(0 0 0 / 45%);
 }
@@ -95,7 +89,7 @@ header .navbar {
 
 /* Carousel Section */
 .carousel {
-    border-radius: 16px;
+    border-radius: 4px;
     overflow     : hidden;
 }
 
@@ -130,6 +124,16 @@ label h5 {
     text-align: center;
 }
 
+/* Modal */
+.modal-header{
+    background: var(--theme-blue);
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #c7c7c7;
+}
+
 /* FAQ Section */
 #accordion {
     display: block;
@@ -157,7 +161,7 @@ label h5 {
 #accordion .card {
     margin-bottom: 4px;
     border       : none !important;
-    border-radius: 16px;
+    border-radius: 4px;
     overflow     : hidden;
 }
 
@@ -201,5 +205,11 @@ footer .nav {
     }
     .svg-img {
         max-width: 18%;
+    }
+    .sm-value{
+        font-size: 24px;
+    }
+    .lg-value{
+        font-size: 30px;
     }
 }
