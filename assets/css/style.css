@@ -82,7 +82,7 @@ hr {
     border-color    : #0060c5;
 }
 
-input:read-only{
+.capital-container input:read-only{
     color: var(--green);
     font-weight: bold;
 }
@@ -219,9 +219,8 @@ footer .nav {
     position: fixed;
     box-shadow: 1px 1px 10px 4px rgb(40 167 69 / 0.8);
     top: 10px;
-    right: 10px;
-    opacity: 0;
-    transition: all .4s;
+    right: -212px;
+    transition: all .4s ease-in-out;
     z-index: 9999;
 }
 
@@ -232,7 +231,7 @@ footer .nav {
 }
 
 .custom-popover-active{
-    opacity: 1;
+    right: 10px;
 }
 
 /* Media Quuries */
