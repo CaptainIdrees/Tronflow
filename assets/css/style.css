@@ -219,7 +219,7 @@ footer .nav {
     position: fixed;
     box-shadow: 1px 1px 10px 4px rgb(40 167 69 / 0.8);
     top: 10px;
-    right: -212px;
+    right: -215px;
     transition: all .4s ease-in-out;
     z-index: 9999;
 }
