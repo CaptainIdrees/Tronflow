@@ -24,13 +24,6 @@
 <body>
     <!-- Header Start -->
     <header>
-        <div class="top-header">
-            <div class="container">
-                <p class="m-0">
-                    Address will go here...
-                </p>
-            </div>
-        </div>
         <div id="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -50,6 +43,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Invest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Wallet</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contract</a>
@@ -83,8 +79,9 @@
                             </li>
                         </ul>
                         <div class="d-flex">
-                            <button class="btn btn-primary m-2 my-sm-0">Swap USDT</button>
-                            <button class="btn btn-danger m-2 my-sm-0">Join us</button>
+                            <p class="text-white m-0">
+                                Address will go here...
+                            </p>
                         </div>
                     </div>
                 </nav>
@@ -187,16 +184,16 @@
             <div class="py-4"></div>
             <div class="row">
                 <div class="col-6">
-                    <h2 class="text-red text-center">
-                        0
+                    <h2 class="text-red text-center sm-value">
+                        5.000.000
                     </h2>
                     <p class="text-center text-white">
                         Invested TRX
                     </p>
                 </div>
                 <div class="col-6">
-                    <h2 class="text-red text-center">
-                        0
+                    <h2 class="text-red text-center sm-value">
+                        5.000.000
                     </h2>
                     <p class="text-center text-white">
                         Investers
@@ -205,8 +202,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-red text-center">
-                        0.0%
+                    <h1 class="text-red text-center lg-value">
+                        10.000000005%
                     </h1>
                     <p class="text-center text-white">
                         Actual ROI/Day
@@ -387,15 +384,15 @@
                         <div class="row mt-4">
                             <div class="col-6">
                                 <button class="btn btn-primary w-100" data-toggle="modal"
-                                    data-target="#exampleModal">Reinvest</button>
+                                    data-target="#reinvestModal">Reinvest</button>
                             </div>
                             <div class="col-6">
                                 <button class="btn btn-success w-100" data-toggle="modal"
-                                    data-target="#exampleModal">Withdraw</button>
+                                    data-target="#withdrawModal">Withdraw</button>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-danger mt-3 w-100" data-toggle="modal"
-                                    data-target="#exampleModal">STATS</button>
+                                    data-target="#statsModal">STATS</button>
                             </div>
                         </div>
                     </div>
@@ -405,23 +402,72 @@
             <hr>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <!-- Reinvest Modal -->
+        <div class="modal fade" id="reinvestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Are you sure about this action?</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to Reinvest?</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Click "Yes" to continue and "No" to cancel.
+                        If you reinvest Xxxx trx willbe deducted from your active deposit and Xxxxx will be reinvested. Your new active deposit will be Xxxxx.
+                        <br>
+                        <br>
+                        Click <b>Yes</b> to accept or <b>No</b> to cancel.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-dismiss="modal">Yes</button>
-                        <button type="button" class="btn btn-secondary">No</button>
+                        <button type="button" class="btn btn-dark">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Withdraw Modal -->
+        <div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to Withdraw?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        If you withdraw XXXX amount will be deducted, and Xxxx (25%) will be reinvested. Your new active deposit will be Xxxxx.
+                        <br>
+                        <br>
+                        Click <b>Yes</b> to accept or <b>No</b> to cancel.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-dark">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Modal -->
+        <div class="modal fade" id="statsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Showing Statistics of Username</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Statistics about user will go here.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -477,7 +523,7 @@
                         <div class="col-11 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-download"></i> 103 TRX </div>
+                                    <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
                                 </div>
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
@@ -491,7 +537,7 @@
                         <div class="col-11 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-download"></i> 103 TRX </div>
+                                    <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
                                 </div>
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
@@ -505,7 +551,7 @@
                         <div class="col-11 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-download"></i> 103 TRX </div>
+                                    <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
                                 </div>
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
@@ -519,7 +565,7 @@
                         <div class="col-11 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-download"></i> 103 TRX </div>
+                                    <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
                                 </div>
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
@@ -533,7 +579,7 @@
                         <div class="col-11 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-download"></i> 103 TRX </div>
+                                    <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
                                 </div>
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
@@ -655,16 +701,34 @@
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
     </section>
     <!-- Activity Section End -->
 
+    <div class="py-4"></div>
+
+    <!-- About Section Start -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-white sec-title">
+                ABOUT <span class="text-red">TRON</span> FLOW
+            </h2>
+            <div class="divider"></div>
+            <p class="text-center text-blue">
+                Tron Flow - It is an open source ROI Game that is 100% transparent and fair to all the players. This is a smart contract on the Tron Blockchain. Please consider this as a gambling and invest only the TRX that you can afford to lose. All you have to do is deposit and withdraw your profits. You get profits every second until there is money in the contract. Invest more TRX to earn more profits. You can refer people to this smart contract and earn referral commission up to 4 levels.
+            </p>
+        </div>
+    </section>
+    <!-- About Section End -->
 
     <div class="py-4"></div>
 
     <!-- FAQ Start -->
     <section>
         <div class="container">
+            <hr>
+            <div class="py-4"></div>
             <h2 class="sec-title text-center text-white">
                 FREQUENTLY ASKED QUESTIONS
             </h2>
