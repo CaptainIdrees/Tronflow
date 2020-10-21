@@ -48,9 +48,6 @@
                                 <a class="nav-link" href="#">Wallet</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contract</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">FAQ</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -76,6 +73,9 @@
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contract</a>
                             </li>
                         </ul>
                         <div class="d-flex">
@@ -131,7 +131,7 @@
     <section>
         <div>
             <h2 class="sec-title text-center text-white">
-                WHY TRON FLOW
+                WHY <span class="text-red font-italic">TRON</span> <span class="text-theme-blue font-italic">FLOW</span>
             </h2>
             <div class="divider"></div>
             <div class="py-2"></div>
@@ -202,8 +202,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-red text-center lg-value">
-                        10.000000005%
+                    <h1 class="text-theme-blue text-center lg-value">
+                        5.5%
                     </h1>
                     <p class="text-center text-white">
                         Actual ROI/Day
@@ -313,14 +313,14 @@
                                 </div>
                                 <div class="col-11 my-1">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="inputActualCapital" value="0.00">
+                                        <input type="text" readonly class="form-control" id="inputActualCapital" value="0.00">
                                         <div class="input-group-append">
                                             <div class="input-group-text">TRX</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-1 my-1">
-                                    <button type="button" class="btn btn-outline-success p-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
+                                    <a tabindex="1" class="btn btn-outline-success p-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">?</a>                                
                                 </div>
                             </div>
 
@@ -332,14 +332,14 @@
                                 </div>
                                 <div class="col-11 my-1">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="inputActualCapital" value="0.00">
+                                        <input type="text" readonly class="form-control" id="inputActualCapital" value="0.00">
                                         <div class="input-group-append">
                                             <div class="input-group-text">TRX</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-1 my-1">
-                                    <button type="button" class="btn btn-outline-success p-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
+                                    <a tabindex="2" class="btn btn-outline-success p-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">?</a>                                
                                 </div>
                             </div>
 
@@ -351,14 +351,14 @@
                                 </div>
                                 <div class="col-11 my-1">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="inputActualCapital" value="0.00">
+                                        <input type="text" readonly class="form-control" id="inputActualCapital" value="0.00">
                                         <div class="input-group-append">
                                             <div class="input-group-text">TRX</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-1 my-1">
-                                    <button type="button" class="btn btn-outline-success p-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
+                                    <a tabindex="3" class="btn btn-outline-success p-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">?</a>
                                 </div>
                             </div>
 
@@ -370,14 +370,14 @@
                                 </div>
                                 <div class="col-11 my-1">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="inputActualCapital" value="0.00">
+                                        <input type="text" readonly class="form-control" id="inputActualCapital" value="0.00">
                                         <div class="input-group-append">
                                             <div class="input-group-text">TRX</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-1 my-1">
-                                    <button type="button" class="btn btn-outline-success p-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
+                                    <a tabindex="4" class="btn btn-outline-success p-1" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">?</a>
                                 </div>
                             </div>
                         </form>
@@ -517,10 +517,10 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h4 class="text-white">
-                        Top 5 Investment
+                        Last 5 Investments
                     </h4>
                     <div class="form-row align-items-center mt-4">
-                        <div class="col-11 my-1">
+                        <div class="col-12 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
@@ -528,13 +528,10 @@
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
                             </div>
-                        </div>
-                        <div class="col-1 my-1 p-0">
-                            <button class="btn btn-success p-1"><i class="fas fa-eye"></i></button>
                         </div>
                     </div>
                     <div class="form-row align-items-center mt-2">
-                        <div class="col-11 my-1">
+                        <div class="col-12 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
@@ -542,13 +539,10 @@
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
                             </div>
-                        </div>
-                        <div class="col-1 my-1 p-0">
-                            <button class="btn btn-success p-1"><i class="fas fa-eye"></i></button>
                         </div>
                     </div>
                     <div class="form-row align-items-center mt-2">
-                        <div class="col-11 my-1">
+                        <div class="col-12 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
@@ -556,13 +550,10 @@
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
                             </div>
-                        </div>
-                        <div class="col-1 my-1 p-0">
-                            <button class="btn btn-success p-1"><i class="fas fa-eye"></i></button>
                         </div>
                     </div>
                     <div class="form-row align-items-center mt-2">
-                        <div class="col-11 my-1">
+                        <div class="col-12 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
@@ -570,13 +561,10 @@
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
                             </div>
-                        </div>
-                        <div class="col-1 my-1 p-0">
-                            <button class="btn btn-success p-1"><i class="fas fa-eye"></i></button>
                         </div>
                     </div>
                     <div class="form-row align-items-center mt-2">
-                        <div class="col-11 my-1">
+                        <div class="col-12 my-1">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fas fa-download"></i>&nbsp; 5.000.000 TRX </div>
@@ -584,15 +572,12 @@
                                 <input type="text" class="form-control" id="inputActualCapital" readonly
                                     value="578c5d42d...c1">
                             </div>
-                        </div>
-                        <div class="col-1 my-1 p-0">
-                            <button class="btn btn-success p-1"><i class="fas fa-eye"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h4 class="text-white">
-                        Top Max Deposit
+                        Top Max Deposits
                     </h4>
                     <div class="form-row align-items-center mt-4">
                         <div class="col-12 my-1">
@@ -647,7 +632,7 @@
                 </div>
                 <div class="col-md-4">
                     <h4 class="text-white">
-                        Top Direct Refferer
+                        Top Direct Refferers
                     </h4>
                     <div class="form-row align-items-center mt-4">
                         <div class="col-12 my-1">
@@ -708,27 +693,9 @@
 
     <div class="py-4"></div>
 
-    <!-- About Section Start -->
-    <section>
-        <div class="container">
-            <h2 class="text-center text-white sec-title">
-                ABOUT <span class="text-red">TRON</span> FLOW
-            </h2>
-            <div class="divider"></div>
-            <p class="text-center text-blue">
-                Tron Flow - It is an open source ROI Game that is 100% transparent and fair to all the players. This is a smart contract on the Tron Blockchain. Please consider this as a gambling and invest only the TRX that you can afford to lose. All you have to do is deposit and withdraw your profits. You get profits every second until there is money in the contract. Invest more TRX to earn more profits. You can refer people to this smart contract and earn referral commission up to 4 levels.
-            </p>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <div class="py-4"></div>
-
     <!-- FAQ Start -->
     <section>
         <div class="container">
-            <hr>
-            <div class="py-4"></div>
             <h2 class="sec-title text-center text-white">
                 FREQUENTLY ASKED QUESTIONS
             </h2>
@@ -826,9 +793,28 @@
 
     <div class="py-4"></div>
 
+    <!-- About Section Start -->
+    <section>
+        <div class="container">
+            <hr>
+            <div class="py-4"></div>
+            <h2 class="text-center text-white sec-title">
+                ABOUT <span class="text-red font-italic">TRON</span> <span class="text-theme-blue font-italic">FLOW</span>
+            </h2>
+            <div class="divider"></div>
+            <p class="text-center text-blue">
+                Tron Flow - It is an open source ROI Game that is 100% transparent and fair to all the players. This is a smart contract on the Tron Blockchain. Please consider this as a gambling and invest only the TRX that you can afford to lose. All you have to do is deposit and withdraw your profits. You get profits every second until there is money in the contract. Invest more TRX to earn more profits. You can refer people to this smart contract and earn referral commission up to 4 levels.
+            </p>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <div class="py-4"></div>
+
     <!-- Footer Start -->
     <footer class="py-2">
         <div class="container">
+            <hr>
             <div class="row">
                 <div class="col-md-4">
                     <a href="#">
@@ -859,6 +845,15 @@
             </div>
         </div>
     </footer>
+
+    <div class="custom-popover d-flex">
+        <span class="fas fa-check text-white"></span>
+        <p class="text-white m-0">
+            Abdullah withdrawn
+            <br>
+            354.770141 TRX
+        </p>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
