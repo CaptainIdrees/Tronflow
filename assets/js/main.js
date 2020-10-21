@@ -15,6 +15,16 @@ $('.card-header').click(function () {
     $(this).toggleClass('active');
 });
 
-
 // Initialize popover
 $('[data-toggle="popover"]').popover();
+
+// Make popover dismissable
+$('.popover-dismiss').popover({
+    trigger: 'focus'
+  });
+
+window.setInterval(function(){
+    $(function() {
+        $(".custom-popover").toggleClass("custom-popover-active");
+  });
+}, 3000);
