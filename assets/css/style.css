@@ -248,4 +248,11 @@ footer .nav {
     .lg-value{
         font-size: 30px;
     }
+    .copyright-text {
+        margin: 10px 0;
+        line-height: 25px;
+    }
+    footer .nav {
+        line-height: 15px;
+    }
 }
